@@ -18,7 +18,7 @@
 
 /* https://github.com/Marzogh/Tricorder/blob/master/Tricorder/GUVAS12SD.ino */
 
-GUVAS12SD::GUVAS12SD(int connectedPinNo, float workingVoltage = 5.0, int samplingCount = 1000)
+GUVAS12SD::GUVAS12SD(int connectedPinNo, float workingVoltage, int samplingCount)
 {
   port = connectedPinNo;
   v = workingVoltage;
