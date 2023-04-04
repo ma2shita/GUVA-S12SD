@@ -13,14 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#ifndef _GUVA-S12SD_h
-#define _GUVA-S12SD_h
+#ifndef _GUVA_S12SD_h
+#define _GUVA_S12SD_h
 #include "arduino.h"
 
 class GUVAS12SD
 {
   public:
-    GUVAS12SD(int connectedPinNo, float workingVoltage = 5.0, int samplingCount = 1000);
+    float workingVoltage = 5.0;
+	int samplingCount = 1000;
+	GUVAS12SD(int connectedPinNo, float workingVoltage/* = 5.0*/, int samplingCount/* = 1000*/);
   public:
     float read();
     float index(float read_mV);

@@ -6,7 +6,7 @@ GUVA-S12SD is used in [Grove UV sensor](http://wiki.seeed.cc/Grove-UV_Sensor/)
 
 ```arduino
 #include <GUVA-S12SD.h>
-GUVAS12SD uv(A0);
+GUVAS12SD uv(A0,5.0,1000);
 
 void setup()
 {
